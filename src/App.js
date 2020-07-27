@@ -14,9 +14,13 @@ export class App extends Component {
   render() {
     return (
       <div>
+        <div>
         <SideBar handleCick={this.handleCick}/> 
+        </div>
+        <div className='ui celled grid'>
         {this.state.dropdown === 'Resume' ? <Resume /> : null }
         {this.state.dropdown === 'Projects' ? <Videos /> : null }
+        </div>
       </div>
     )
   }
