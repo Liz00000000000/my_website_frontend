@@ -15,8 +15,8 @@ export class App extends Component {
     return (
       <div>
         <SideBar handleCick={this.handleCick}/> 
-        {this.state.dropdown == 'Resume' ? <Resume /> : null }
-        {this.state.dropdown == 'Projects' ? <Videos /> : null }
+        {this.state.dropdown === 'Resume' ? <Resume /> : null }
+        {this.state.dropdown === 'Projects' ? <Videos /> : null }
       </div>
     )
   }
